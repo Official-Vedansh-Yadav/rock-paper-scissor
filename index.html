@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo.png" alt="logo for the website">
+            <h1>Stone Paper Scissor - Game</h1>
+        </div>
+        <div class="score">
+            <h1>Score</h1>
+            <div class="main-score">
+                <section id="you">
+                    <p>You</p>
+                    <p>0</p>
+                </section>
+                <section id="bot">
+                    <p>Bot</p>
+                    <p>0</p>
+                </section>
+            </div>
+        <div class="choose flex">
+            <div class="option flex flex-center border-1" onclick="getuserchoice('rock')">
+                <img src="img/rock.png" alt="">
+                <p>Rock</p>
+            </div>
+            <div class="option flex flex-center border-1" onclick="getuserchoice('paper')">
+                <img src="img/paper.png" alt="">
+                <p>Paper</p>
+            </div>
+            <div class="option flex flex-center border-1" onclick="getuserchoice('scissor')">
+                <img src="img/scissor.png" alt="">
+                <p>Scissor</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="logic.js"></script>
+</html>
